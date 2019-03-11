@@ -7,7 +7,8 @@ setup(name='pysubnet',
       description='Basic Subnet',
       author="Fairfax Smartware",
       author_email='info@fairfaxsmartware.com',
-      url='',
+      url='https://github.com/bertobot/pysubnet',
+      py_modules=['pysubnet'],
       package_dir={'': 'src'}
      )
 
