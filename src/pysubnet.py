@@ -59,7 +59,7 @@ class Subnet(object):
             if self.subnetOf(subnet):
                 return True
 
-        finally:
+        except NotInSubnetException:
             return False
 
     def subnetOf(self, subnet: str):
