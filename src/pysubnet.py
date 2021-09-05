@@ -42,6 +42,8 @@ class NotInSubnetException(SubnetException):
 
 
 class Subnet(object):
+    RFC1918 = ['192.168.0.0/16', '172.16.0.0/12', '10.0.0.0/8']
+
     def __init__(self, subnets):
         self.subnets = []
         if isinstance(subnets, list):
